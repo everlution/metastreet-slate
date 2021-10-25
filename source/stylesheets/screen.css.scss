@@ -61,6 +61,7 @@ html, body {
   background-color: $nav-bg;
   font-size: 13px;
   font-weight: bold;
+  border-right: 1px solid #eee;
 
   // language selector for mobile devices
   .lang-selector {
@@ -80,6 +81,7 @@ html, body {
 
   &>.search {
     position: relative;
+    color: $nav-text;
 
     input {
       background: $nav-bg;
@@ -630,4 +632,8 @@ html, body {
 
 .copy-clipboard:hover {
   opacity: 0.8;
+}
+
+::placeholder {
+  color: #8792a2;
 }

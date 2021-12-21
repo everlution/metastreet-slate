@@ -11,7 +11,9 @@ toc_footers:
 
 includes:
   - introduction
+  - authentication
   - errors
+  - template
 
 search: true
 

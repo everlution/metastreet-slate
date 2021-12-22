@@ -8,7 +8,7 @@
 
 > EXAMPLE RESPONSE
 
-```shell
+```json
 "object": "property",
 "url": "https://example-council.metastreet.co.uk/api/v1/properties",
 "pageSize": 100,

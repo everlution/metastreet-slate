@@ -1,27 +1,34 @@
 # Authentication
 
-> AUTHENTICATED REQUEST
+> EXAMPLE AUTHENTICATED REQUEST
 
 ```shell
-  $ curl 'https://example-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'
+$ curl 'https://your-council.metastreet.co.uk/api/v1.1/properties' /
+-H 'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'
 ```
-
 
 > EXAMPLE RESPONSE
 
 ```json
-	{
-    "id": 1,
-    "title": "Dubnobasswithmyheadman",
-    "artist": "Underworld",
-    "year": 1994
-  }
-  {
-    "id": 2,
-    "title": "ISDN",
-    "artist": "Future Sound of London",
-    "year": 1994
-  }
+{
+  "object": "property",
+  "url": "/api/v1.1/properties",
+  ...
+  "data": [ {
+    "id": 1248152,
+    "referenceNumbers": [
+      "YCO-583484913397"
+    ],
+    "address": {
+      "addressLine1": "4, Dasher Place",
+      "addressLine2": "Dasher Street",
+      "addressLine3": "Highbury City",
+      ...
+    }
+    ...
+  },
+  ]
+}
 ```
 
 The Metastreet API uses API keys to authenticate requests. You can view your API key(s) in `Settings -> Integrations` section of the council backend.  If you can't find your API key(s), please contact your account manager.

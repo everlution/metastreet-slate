@@ -2,10 +2,10 @@
 
 > EXAMPLE ERROR MESSAGE
 
-```shell
+```json
 http code 404
 {
-    "error": "Invalid endpoint"
+  "error": "Invalid endpoint"
 }
 ```
 

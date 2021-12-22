@@ -286,7 +286,7 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-e572f1f5.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-a6192dd6.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-9481a2a1.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-a84bb88c.js"></script>
 
@@ -316,7 +316,10 @@
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#response-codes" class="toc-h1 toc-link" data-title="Response codes">Response codes</a>
+          </li>
+          <li>
+            <a href="#pagination" class="toc-h1 toc-link" data-title="Pagination">Pagination</a>
           </li>
           <li>
             <a href="#template" class="toc-h1 toc-link" data-title="Template">Template</a>
@@ -338,11 +341,10 @@
 <blockquote>
 <p>AUTHENTICATED REQUEST</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>  <span class="nv">$ </span>curl <span class="s1">'https://metastreet.co.uk/api/v1.1/licences/search?key={your_api_key}'</span>
-  <span class="nt">-d</span> <span class="s1">'{"tradingCompany": "PLC"}'</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>  <span class="nv">$ </span>curl <span class="s1">'https://example-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'</span>
 </code></pre></div>
 <blockquote>
-<p>RESPONSE</p>
+<p>EXAMPLE RESPONSE</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="w">    </span><span class="p">{</span><span class="w">
     </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
@@ -364,19 +366,27 @@
 <p>The API key needs to be included in the URL of each end-point as a query parameter even for POST requests.</p>
 
 <p>All API requests must be made over HTTPS. Calls made over plain HTTP will fail. API requests without authentication will also fail.</p>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
+<h1 id='response-codes'>Response codes</h1>
+<blockquote>
+<p>EXAMPLE ERROR MESSAGE</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>http code 404
+<span class="o">{</span>
+    <span class="s2">"error"</span>: <span class="s2">"Invalid endpoint"</span>
+<span class="o">}</span>
+</code></pre></div>
+<p>Metastreet uses conventional HTTP response codes to indicate the success or failure of an API request. In general: Codes in the 2xx range indicate success. Codes in the 4xx range indicate an error that failed given the information provided (e.g., a required parameter was omitted, a charge failed, etc.). Codes in the 5xx range indicate an error with Metastreet&#39;s servers (these are rare).</p>
 
 <table><thead>
 <tr>
-<th>Error Code</th>
+<th>Response Code</th>
 <th>Meaning</th>
 </tr>
 </thead><tbody>
+<tr>
+<td>200</td>
+<td>OK -- Everything worked as expected</td>
+</tr>
 <tr>
 <td>400</td>
 <td>Bad Request -- Your request is invalid.</td>
@@ -386,32 +396,32 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 <td>Unauthorized -- Your API key is wrong.</td>
 </tr>
 <tr>
+<td>402</td>
+<td>Request failed -- The parameters were valid but the request failed.</td>
+</tr>
+<tr>
 <td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>Forbidden -- The API key doesn&#39;t have permissions to perform the request.</td>
 </tr>
 <tr>
 <td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
+<td>Not Found -- The requested resource doesn&#39;t exist.</td>
 </tr>
 <tr>
 <td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+<td>Method Not Allowed -- You tried to access a resource with an invalid method.</td>
 </tr>
 <tr>
 <td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+<td>Not Acceptable -- You requested a format that isn&#39;t available.</td>
 </tr>
 <tr>
 <td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
+<td>Gone -- The resource requested has been removed from our servers.</td>
 </tr>
 <tr>
 <td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+<td>Too Many Requests -- Too many requests hit the API too quickly. We recommend an exponential backoff of your requests.</td>
 </tr>
 <tr>
 <td>500</td>
@@ -422,6 +432,54 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
+<h1 id='pagination'>Pagination</h1>
+<blockquote>
+<p>EXAMPLE REQUEST</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>  <span class="nv">$ </span>curl <span class="s1">'https://example-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'</span>
+</code></pre></div>
+<blockquote>
+<p>EXAMPLE RESPONSE</p>
+</blockquote>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="s2">"object"</span>: <span class="s2">"property"</span>,
+<span class="s2">"url"</span>: <span class="s2">"https://example-council.metastreet.co.uk/api/v1/properties"</span>,
+<span class="s2">"pageSize"</span>: 100,
+<span class="s2">"currentPage"</span>: 1,
+<span class="s2">"totalPages"</span>: 3,
+<span class="s2">"totalCount"</span>: 40,
+<span class="s2">"data"</span>: <span class="o">[</span>
+  <span class="o">{</span>
+    <span class="s2">"id"</span>: 123,
+    <span class="s2">"referenceNumbers"</span>: <span class="o">[</span>
+      <span class="s2">"string"</span>
+    <span class="o">]</span>,
+    <span class="s2">"address"</span>: <span class="o">{</span>
+      <span class="s2">"addressLine1"</span>: <span class="s2">"Flat 123"</span>,
+      <span class="s2">"addressLine2"</span>: <span class="s2">"Imaginary Court"</span>,
+      <span class="s2">"addressLine3"</span>: <span class="s2">"Example Estate"</span>,
+      <span class="s2">"addressLine4"</span>: <span class="s2">"Abstract City"</span>,
+      <span class="s2">"city"</span>: <span class="s2">"London"</span>,
+      <span class="s2">"country"</span>: <span class="s2">"United Kingdom"</span>,
+      <span class="s2">"county"</span>: <span class="s2">"Fantasy"</span>,
+      <span class="s2">"postcode"</span>: <span class="s2">"A1 2BC"</span>,
+      <span class="s2">"uprn"</span>: <span class="s2">"12345678910"</span>,
+      <span class="s2">"usrn"</span>: <span class="s2">"1234567"</span>,
+      <span class="s2">"latitude"</span>: <span class="s2">"1.230045"</span>,
+      <span class="s2">"longitude"</span>: <span class="s2">"-5.430021"</span>,
+      <span class="s2">"ward"</span>: <span class="s2">"Dream Ward"</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">]</span>
+</code></pre></div>
+<p>All top-level API resources have support for pagination.</p>
+
+<p>The <code>pageSize</code> and <code>page</code> query parameters let you control pagination.</p>
+
+<p>Using the <code>pageSize</code> parameter, you can define the number of items to be displayed on one page.  By default, 100 results are returned per page and only one page is returned per request.</p>
+
+<p>Using the <code>page</code> parameter you can select which page you would like to be returned.</p>
+
+<p>To set the <code>pageSize</code> and <code>page</code> parameters, you should pass a value greater than <code>0</code> as a query argument.</p>
 <h1 id='template'>Template</h1>
 <p>This section is a design template - to be removed before golive.</p>
 

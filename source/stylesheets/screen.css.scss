@@ -471,6 +471,7 @@ html, body {
   pre>code {
     background-color: transparent;
     padding: 0;
+    line-height: 26px;
   }
 
   aside {
@@ -552,9 +553,10 @@ html, body {
 
   pre {
     @extend %code-font;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    padding: 2em $main-padding;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 28px;
+    padding: 20px $main-padding;
     background-color: #50586B;
   }
 
@@ -638,6 +640,7 @@ html, body {
   cursor: pointer;
   height: 18px;
   width: 18px;
+  margin: 15px;
 }
 
 .copy-clipboard:hover {

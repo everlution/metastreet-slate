@@ -59,8 +59,8 @@ html, body {
   bottom: 0;
   width: $nav-width;
   background-color: $nav-bg;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: 500;
   border-right: 1px solid #eee;
 
   // language selector for mobile devices
@@ -131,6 +131,7 @@ html, body {
 
       &:hover {
         text-decoration: underline;
+        opacity: 0.8;
       }
     }
   }
@@ -199,7 +200,7 @@ html, body {
 }
 
 .toc-link, .toc-footer li {
-  padding: 0 $nav-padding 0 $nav-padding;
+  padding: 2px $nav-padding 2px $nav-padding;
   display: block;
   overflow-x: hidden;
   white-space: nowrap;
@@ -349,15 +350,14 @@ html, body {
 
   h1 {
     @extend %header-font;
-    font-size: 25px;
+    font-size: 24px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #fdfdfd;
+    background-color: #FFFFFF;
     font-weight: 500;
+    color: #2a2f45;
   }
 
   h1:first-child, div:first-child + h1 {
@@ -392,7 +392,9 @@ html, body {
 
   h4 {
     font-size: 16px;
+    margin-top: 1px;
     font-weight: normal;
+    line-height: 25px;
   }
 
   h5, h6 {
@@ -451,6 +453,7 @@ html, body {
   p, li, dt, dd {
     line-height: 1.6;
     margin-top: 0;
+    font-size: 14px;
   }
 
   img {
@@ -526,7 +529,7 @@ html, body {
 
   pre, blockquote {
     background-color: $code-bg;
-    color: #fff;
+    color: #CCCCCC;
 
     margin: 0;
     width: $examples-width;
@@ -552,13 +555,15 @@ html, body {
     padding-top: 2em;
     padding-bottom: 2em;
     padding: 2em $main-padding;
+    background-color: #50586B;
   }
 
   blockquote {
     &>p {
       background-color: $code-annotation-bg;
       padding: $code-annotation-padding 2em;
-      color: #eee;
+      color: #A4ACBA;
+      font-weight: 500;
     }
   }
 }
@@ -629,15 +634,14 @@ html, body {
 
 .copy-clipboard {
   float: right;
-  fill: #9DAAB6;
+  fill: #A5CDFE;
   cursor: pointer;
-  opacity: 0.4;
   height: 18px;
   width: 18px;
 }
 
 .copy-clipboard:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 ::placeholder {

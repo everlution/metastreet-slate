@@ -3,12 +3,11 @@
 > AUTHENTICATED REQUEST
 
 ```shell
-  $ curl 'https://metastreet.co.uk/api/v1.1/licences/search?key={your_api_key}'
-  -d '{"tradingCompany": "PLC"}'
+  $ curl 'https://example-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'
 ```
 
 
-> RESPONSE
+> EXAMPLE RESPONSE
 
 ```json
 	{

@@ -8,7 +8,8 @@ toc_footers:
 includes:
   - introduction
   - authentication
-  - errors
+  - responsecodes
+  - pagination
   - template
 
 search: true

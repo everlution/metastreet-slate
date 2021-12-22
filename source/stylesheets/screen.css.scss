@@ -471,7 +471,6 @@ html, body {
   pre>code {
     background-color: transparent;
     padding: 0;
-    line-height: 26px;
   }
 
   aside {
@@ -530,7 +529,6 @@ html, body {
 
   pre, blockquote {
     background-color: $code-bg;
-    color: #CCCCCC;
 
     margin: 0;
     width: $examples-width;
@@ -628,6 +626,18 @@ html, body {
 
 .highlight .c, .highlight .cm, .highlight .c1, .highlight .cs {
   color: #909090;
+}
+
+.highlight .nt, .highlight .nv, .highlight .nl {
+  color: #F5FBFF;
+}
+
+.highlight .s1, .highlight .s2 {
+  color: #85D996;
+}
+
+.highlight .mi {
+  color: #A4CDFE;
 }
 
 .highlight, .highlight .w {

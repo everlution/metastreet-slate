@@ -2,9 +2,27 @@
 
 > AUTHENTICATED REQUEST
 
+```shell
+  $ curl 'https://metastreet.co.uk/api/v1.1/licences/search?key={your_api_key}'
+  -d '{"tradingCompany": "PLC"}'
 ```
-$ curl 'https://api.ma-monitor.co.uk/v1/search?key={your_api_key}'
--d '{"tradingCompany": "PLC"}'
+
+
+> RESPONSE
+
+```json
+	{
+    "id": 1,
+    "title": "Dubnobasswithmyheadman",
+    "artist": "Underworld",
+    "year": 1994
+  }
+  {
+    "id": 2,
+    "title": "ISDN",
+    "artist": "Future Sound of London",
+    "year": 1994
+  }
 ```
 
 The Metastreet API uses API keys to authenticate requests. You can view your API key(s) in `Settings -> Integrations` section of the council backend.  If you can't find your API key(s), please contact your account manager.

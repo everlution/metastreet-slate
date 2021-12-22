@@ -83,13 +83,13 @@ module Rouge
               Text::Whitespace,
               Text,
               Name,                             :fg => :white
-        style Name::Label,                      :fg => :bright_pink
+        style Name::Label,                      :fg => :white
         style Operator::Word,
               Name::Tag,
               Keyword,
               Keyword::Namespace,
               Keyword::Pseudo,
-              Operator,                         :fg => :bright_pink
+              Operator,                         :fg => :white
       end
     end
   end

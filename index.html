@@ -179,25 +179,25 @@
   color: #ffffff;
 }
 .highlight .nl {
-  color: #f92672;
+  color: #ffffff;
 }
 .highlight .ow {
-  color: #f92672;
+  color: #ffffff;
 }
 .highlight .nt {
-  color: #f92672;
+  color: #ffffff;
 }
 .highlight .k, .highlight .kv {
-  color: #f92672;
+  color: #ffffff;
 }
 .highlight .kn {
-  color: #f92672;
+  color: #ffffff;
 }
 .highlight .kp {
-  color: #f92672;
+  color: #ffffff;
 }
 .highlight .o {
-  color: #f92672;
+  color: #ffffff;
 }
     </style>
     <style media="print">
@@ -286,7 +286,7 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-2b1b16d4.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-e572f1f5.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-9481a2a1.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-a84bb88c.js"></script>
 
@@ -338,9 +338,25 @@
 <blockquote>
 <p>AUTHENTICATED REQUEST</p>
 </blockquote>
-<div class="highlight"><pre class="highlight plaintext"><code>$ curl 'https://api.ma-monitor.co.uk/v1/search?key={your_api_key}'
--d '{"tradingCompany": "PLC"}'
+<div class="highlight"><pre class="highlight shell tab-shell"><code>  <span class="nv">$ </span>curl <span class="s1">'https://metastreet.co.uk/api/v1.1/licences/search?key={your_api_key}'</span>
+  <span class="nt">-d</span> <span class="s1">'{"tradingCompany": "PLC"}'</span>
 </code></pre></div>
+<blockquote>
+<p>RESPONSE</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="w">    </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dubnobasswithmyheadman"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"artist"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Underworld"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">1994</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ISDN"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"artist"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Future Sound of London"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"year"</span><span class="p">:</span><span class="w"> </span><span class="mi">1994</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div>
 <p>The Metastreet API uses API keys to authenticate requests. You can view your API key(s) in <code>Settings -&gt; Integrations</code> section of the council backend.  If you can&#39;t find your API key(s), please contact your account manager.</p>
 
 <p>Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth.</p>

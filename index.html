@@ -286,9 +286,9 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-bf76fbaa.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-2365dbf5.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-9481a2a1.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all-f01743df.js"></script>
+      <script src="javascripts/all-581cceb6.js"></script>
 
     <script>
       $(function() { setupCodeCopy(); });
@@ -311,11 +311,6 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#the-metastreet-api-is-organised-around-rest-our-api-has-predictable-resource-oriented-urls-returns-json-encoded-responses-and-uses-standard-http-response-codes-authentication-and-verbs" class="toc-h2 toc-link" data-title="The Metastreet API is organised around REST. Our API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.">The Metastreet API is organised around REST. Our API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.</a>
-                  </li>
-              </ul>
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
@@ -333,15 +328,10 @@
             <a href="#properties" class="toc-h1 toc-link" data-title="Properties">Properties</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#provides-top-level-property-data-including-address-uprn-usrn-and-reference-numbers-of-any-licences-applications-and-temporary-exemptions-associated-with-the-property" class="toc-h2 toc-link" data-title="Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.">Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.</a>
+                    <a href="#the-property-object" class="toc-h2 toc-link" data-title="The property object">The property object</a>
                   </li>
                   <li>
-                    <a href="#the-property-object" class="toc-h2 toc-link" data-title="The property object">The property object</a>
-                      <ul class="toc-list-h3">
-                          <li>
-                            <a href="#provides-top-level-property-data-including-address-uprn-usrn-and-reference-numbers-of-any-licences-applications-and-temporary-exemptions-associated-with-the-property" class="toc-h3 toc-link" data-title="Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.">Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.</a>
-                          </li>
-                      </ul>
+                    <a href="#list-all-properties" class="toc-h2 toc-link" data-title="List all properties">List all properties</a>
                   </li>
               </ul>
           </li>
@@ -355,7 +345,7 @@
 <p>BASE URL</p>
 </blockquote>
 <div class="highlight"><pre class="highlight shell tab-shell"><code>https://your-council.metastreet.co.uk/api/v1.1/
-</code></pre></div><h4 id='the-metastreet-api-is-organised-around-rest-our-api-has-predictable-resource-oriented-urls-returns-json-encoded-responses-and-uses-standard-http-response-codes-authentication-and-verbs'>The Metastreet API is organised around REST. Our API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.</h4><h1 id='authentication'>Authentication</h1>
+</code></pre></div><h5 id='the-metastreet-api-is-organised-around-rest-our-api-has-predictable-resource-oriented-urls-returns-json-encoded-responses-and-uses-standard-http-response-codes-authentication-and-verbs'>The Metastreet API is organised around REST. Our API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.</h5><h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>EXAMPLE AUTHENTICATED REQUEST</p>
 </blockquote>
@@ -512,20 +502,44 @@
 </blockquote>
 <div class="highlight"><pre class="highlight php tab-php"><code>  <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span>
   <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span><span class="o">/:</span><span class="n">uprn</span>
-</code></pre></div><h4 id='provides-top-level-property-data-including-address-uprn-usrn-and-reference-numbers-of-any-licences-applications-and-temporary-exemptions-associated-with-the-property'>Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.</h4>
-<p>More stuff here.
-properties
-GET /properties/{uprn}</p>
-<h2 id='the-property-object'>The property object</h2>
+</code></pre></div><h5 id='provides-top-level-property-data-including-address-uprn-usrn-and-reference-numbers-of-any-licences-applications-and-temporary-exemptions-associated-with-the-property'>Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.</h5><h2 id='the-property-object'>The property object</h2>
 <blockquote>
 <p>ENDPOINTS</p>
 </blockquote>
 <div class="highlight"><pre class="highlight php tab-php"><code>  <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span>
   <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span><span class="o">/:</span><span class="n">uprn</span>
-</code></pre></div><h4 id='provides-top-level-property-data-including-address-uprn-usrn-and-reference-numbers-of-any-licences-applications-and-temporary-exemptions-associated-with-the-property'>Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.</h4>
-<p>More stuff here.
-properties
-GET /properties/{uprn}</p>
+</code></pre></div><h3 id='attributes'>Attributes</h3>
+<p style="margin-bottom:0; margin-left:28px; padding-top:15px; padding-left:0px; border-top-style:solid; border-top-color:#eee; border-top-width:1px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">id</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p>Unique identifier for the object.</p>
+
+<p style="margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+<p style="margin-bottom:0; margin-top:15px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">referenceNumbers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array</span>
+</p>
+
+<p>List of reference numbers of any licences, applications and temporary exemptions associated with the property.</p>
+
+<p style="margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+<p style="margin-bottom:0; margin-top:15px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">address</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array</span>
+</p>
+
+<p>All address data.</p>
+
+<p style="margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+<h2 id='list-all-properties'>List all properties</h2>
+<blockquote>
+<p>ENDPOINTS</p>
+</blockquote>
+<div class="highlight"><pre class="highlight php tab-php"><code>  <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span>
+  <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span><span class="o">/:</span><span class="n">uprn</span>
+</code></pre></div>
+<p>Provides top level property data including address, UPRN, USRN and reference numbers of any licences, applications and temporary exemptions associated with the property.</p>
 
       </div>
       <div class="dark-box">

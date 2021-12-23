@@ -10,6 +10,7 @@ includes:
   - authentication
   - responsecodes
   - pagination
+  - coreresources
 
 search: true
 

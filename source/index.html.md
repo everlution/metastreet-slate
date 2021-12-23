@@ -12,6 +12,7 @@ includes:
   - pagination
   - coreresources
   - properties
+  - propertyobject
 
 search: true
 

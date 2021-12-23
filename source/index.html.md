@@ -13,6 +13,8 @@ includes:
   - coreresources
   - properties
   - propertyobject
+  - listproperties
+
 
 search: true
 

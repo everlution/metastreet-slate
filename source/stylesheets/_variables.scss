@@ -29,7 +29,7 @@ $code-bg: #51596C !default;
 $code-annotation-bg: #3c4257 !default;
 $nav-subitem-bg: #51596C !default;
 $nav-active-bg: #fff7f7 !default;
-$nav-active-parent-bg: #51596C !default; // parent links of the current section
+$nav-active-parent-bg: transparent !default; // parent links of the current section
 $lang-select-border: #000 !default;
 $lang-select-bg: #51596C !default;
 $lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
@@ -46,7 +46,7 @@ $search-notice-bg: #c97a7e !default;
 $main-text: #50576B !default; // main content text color
 $nav-text: #8792a2 !default;
 $nav-active-text: #E74868 !default;
-$nav-active-parent-text: #8792a2 !default; // parent links of the current section
+$nav-active-parent-text: inherit !default; // parent links of the current section
 $lang-select-text: #fff !default; // color of unselected language tab text
 $lang-select-active-text: #fff !default; // color of selected language tab text
 $lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
@@ -63,6 +63,7 @@ $nav-v-padding: 10px !default; // padding used vertically around search boxes an
 $nav-indent: 10px !default; // extra padding for ToC subitems
 $code-annotation-padding: 13px !default; // padding inside code annotations
 $h1-margin-bottom: 10px !default; // padding under the largest header tags
+$h2-margin-bottom: 10px !default; // padding under the largest header tags
 $tablet-width: 930px !default; // min width before reverting to tablet size
 $phone-width: $tablet-width - $nav-width !default; // min width before reverting to mobile size
 

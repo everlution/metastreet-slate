@@ -10,7 +10,6 @@ includes:
   - authentication
   - responsecodes
   - pagination
-  - template
 
 search: true
 

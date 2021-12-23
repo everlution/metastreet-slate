@@ -11,6 +11,7 @@ includes:
   - responsecodes
   - pagination
   - coreresources
+  - properties
 
 search: true
 

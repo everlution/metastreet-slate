@@ -143,5 +143,3 @@ All address data.
 </p>
 
 <span style="padding-left:28px">Ward of the address.</span>
-
-<p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>

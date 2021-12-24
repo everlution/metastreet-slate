@@ -58,3 +58,14 @@ $ curl 'https://{your_council}.metastreet.co.uk/api/v1.1/properties' \
 A filter on the list based on the property’s postcode field. The value must be a string.  The filter is not case-sensitive and spaces can removed.
 
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+<p style="padding-top:15px">
+Pagination parameters as also available - see <a href="/?shell#pagination">Pagination</a>.
+</p>
+
+
+### Returns
+
+<p style="max-width:440px; margin-bottom:15px; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+A dictionary with a `data` property that contains an array of properties. Passing an optional `postcode` will result in filtering to properties with only that exact postcode. Each entry in the array is a separate property object. If no more properties are available, the resulting array will be empty. This request should never return an error.

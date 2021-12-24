@@ -286,7 +286,7 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-33de22e2.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-18348150.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-9481a2a1.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-581cceb6.js"></script>
 
@@ -622,8 +622,6 @@
 </p>
 
 <p><span style="padding-left:28px">Ward of the address.</span></p>
-
-<p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 <h2 id='list-all-properties'>List all properties</h2>
 <blockquote>
 <p><span style="font-family:Consolas, Menlo, Monaco, \"Lucida Console\", \"Liberation Mono\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Courier New\", monospace, serif"><span style="color:#a4cdfe">GET</span> /properties</span></p>
@@ -674,6 +672,14 @@
 <p>A filter on the list based on the property’s postcode field. The value must be a string.  The filter is not case-sensitive and spaces can removed.</p>
 
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+<p style="padding-top:15px">
+Pagination parameters as also available - see <a href="/?shell#pagination">Pagination</a>.
+</p>
+<h3 id='returns'>Returns</h3>
+<p style="max-width:440px; margin-bottom:15px; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+<p>A dictionary with a <code>data</code> property that contains an array of properties. Passing an optional <code>postcode</code> will result in filtering to properties with only that exact postcode. Each entry in the array is a separate property object. If no more properties are available, the resulting array will be empty. This request should never return an error.</p>
 
       </div>
       <div class="dark-box">

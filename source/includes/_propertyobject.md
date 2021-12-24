@@ -1,6 +1,6 @@
 ## The property object
 
-> ENDPOINTS
+> THE PROPERTY OBJECT
 
 ```json
 {

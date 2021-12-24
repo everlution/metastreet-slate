@@ -567,7 +567,7 @@ html, body {
 
   pre, blockquote {
     background-color: $code-bg;
-    max-height: 485px;
+    max-height: 493px;
     overflow-y: scroll;
 
     margin: 0;
@@ -668,7 +668,7 @@ html, body {
   color: #909090;
 }
 
-.highlight .nt, .highlight .nv, .highlight .nl, .highlight .o, .highlight .err {
+.highlight .nt, .highlight .nv, .highlight .nl, .highlight .o, .highlight .err, .highlight .se {
   color: #F5FBFF;
 }
 

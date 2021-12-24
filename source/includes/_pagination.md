@@ -1,43 +1,38 @@
 # Pagination
 
-> EXAMPLE REQUEST
+> EXAMPLE PAGINATION REQUEST
 
 ```shell
-  $ curl 'https://your-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'
+$ curl 'https://{your_council}.metastreet.co.uk/api/v1.1/properties?pageSize=50&page=4' \
+-H 'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'
 ```
 
 > EXAMPLE RESPONSE
 
 ```json
-"object": "property",
-"url": "https://your-council.metastreet.co.uk/api/v1/properties",
-"pageSize": 100,
-"currentPage": 1,
-"totalPages": 3,
-"totalCount": 40,
-"data": [
-  {
-    "id": 123,
-    "referenceNumbers": [
-      "string"
-    ],
-    "address": {
-      "addressLine1": "4, Dasher Place",
-      "addressLine2": "Dasher Street",
-      "addressLine3": "Dasher Estate",
-      "addressLine4": "Dasher",
-      "city": "London",
-      "country": "United Kingdom",
-      "county": "Greater London",
-      "postcode": "A1 2BC",
-      "uprn": "12345678910",
-      "usrn": "1234567",
-      "latitude": "1.230045",
-      "longitude": "-5.430021",
-      "ward": "Dasher Ward"
+{
+  "object": "property",
+  "url": "https://your-council.metastreet.co.uk/api/v1/properties",
+  "pageSize": 50,
+  "currentPage": 4,
+  "totalPages": 9,
+  "totalCount": 401,
+  "data": [
+    {
+      "id": 123,
+      "referenceNumbers": [
+        "YCO-583484913397"
+      ],
+      "address": {
+        "addressLine1": "4, Dasher Place",
+        "addressLine2": "Dasher Street",
+        "addressLine3": "Dasher Estate",
+        ...
+      }
     }
-  }
-]
+    ...
+  ]
+}
 ```
 
 All top-level API resources have support for pagination.

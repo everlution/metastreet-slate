@@ -286,7 +286,7 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-2365dbf5.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-51de6fcd.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-9481a2a1.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-581cceb6.js"></script>
 
@@ -367,7 +367,7 @@
     </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
       </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4, Dasher Place"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Street"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Highbury City"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Estate"</span><span class="p">,</span><span class="w">
       </span><span class="err">...</span><span class="w">
     </span><span class="p">}</span><span class="w">
     </span><span class="err">...</span><span class="w">
@@ -452,13 +452,13 @@
 <blockquote>
 <p>EXAMPLE REQUEST</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>  <span class="nv">$ </span>curl <span class="s1">'https://example-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>  <span class="nv">$ </span>curl <span class="s1">'https://your-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'</span>
 </code></pre></div>
 <blockquote>
 <p>EXAMPLE RESPONSE</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="nl">"object"</span><span class="p">:</span><span class="w"> </span><span class="s2">"property"</span><span class="err">,</span><span class="w">
-</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example-council.metastreet.co.uk/api/v1/properties"</span><span class="err">,</span><span class="w">
+</span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://your-council.metastreet.co.uk/api/v1/properties"</span><span class="err">,</span><span class="w">
 </span><span class="nl">"pageSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="err">,</span><span class="w">
 </span><span class="nl">"currentPage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="err">,</span><span class="w">
 </span><span class="nl">"totalPages"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="err">,</span><span class="w">
@@ -470,19 +470,19 @@
       </span><span class="s2">"string"</span><span class="w">
     </span><span class="p">],</span><span class="w">
     </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flat 123"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Imaginary Court"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example Estate"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"addressLine4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Abstract City"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4, Dasher Place"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Street"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Estate"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"addressLine4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United Kingdom"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"county"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fantasy"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"county"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Greater London"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1 2BC"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"uprn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678910"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"usrn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.230045"</span><span class="p">,</span><span class="w">
       </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-5.430021"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"ward"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dream Ward"</span><span class="w">
+      </span><span class="nl">"ward"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Ward"</span><span class="w">
     </span><span class="p">}</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
@@ -506,32 +506,129 @@
 <blockquote>
 <p>ENDPOINTS</p>
 </blockquote>
-<div class="highlight"><pre class="highlight php tab-php"><code>  <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span>
-  <span class="no">GET</span> <span class="o">/</span><span class="n">properties</span><span class="o">/:</span><span class="n">uprn</span>
-</code></pre></div><h3 id='attributes'>Attributes</h3>
-<p style="margin-bottom:0; margin-left:28px; padding-top:15px; padding-left:0px; border-top-style:solid; border-top-color:#eee; border-top-width:1px">
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"referenceNumbers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"YCO-583484913397"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4, Dasher Place"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Street"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Estate"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"addressLine4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United Kingdom"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"county"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Greater London"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1 2BC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"uprn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678910"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"usrn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.230045"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-5.430021"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ward"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Ward"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='attributes'>Attributes</h3>
+<p style="max-width:440px; margin-bottom:0; margin-left:28px; padding-top:15px; padding-left:0px; border-top-style:solid; border-top-color:#eee; border-top-width:1px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">id</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
 <p>Unique identifier for the object.</p>
 
-<p style="margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+<p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
-<p style="margin-bottom:0; margin-top:15px">
+<p style="max-width:440px; margin-bottom:0; margin-top:15px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">referenceNumbers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array</span>
 </p>
 
 <p>List of reference numbers of any licences, applications and temporary exemptions associated with the property.</p>
 
-<p style="margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+<p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
-<p style="margin-bottom:0; margin-top:15px">
+<p style="max-width:440px; margin-bottom:0; margin-top:15px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">address</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array</span>
 </p>
 
 <p>All address data.</p>
 
-<p style="margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine1</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">First line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine2</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Second line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine3</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Third line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine4</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Fourth line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>city</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">City of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>country</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Country of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>county</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">County of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>postcode</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Postcode of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>uprn</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Unique Property Reference Number (UPRN) of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>usrn</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Unique Street Reference Number (USRN) of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>latitude</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Latitude of the address in decimal degrees (<a href="https://wikipedia.org/wiki/ISO_6709" target="_blank">ISO 6709</a>).</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>longitude</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Longitude of the address in decimal degrees (<a href="https://wikipedia.org/wiki/ISO_6709" target="_blank">ISO 6709</a>).</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>ward</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Ward of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 <h2 id='list-all-properties'>List all properties</h2>
 <blockquote>
 <p>ENDPOINTS</p>

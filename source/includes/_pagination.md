@@ -3,14 +3,14 @@
 > EXAMPLE REQUEST
 
 ```shell
-  $ curl 'https://example-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'
+  $ curl 'https://your-council.metastreet.co.uk/api/v1.1/properties?key={your_api_key}'
 ```
 
 > EXAMPLE RESPONSE
 
 ```json
 "object": "property",
-"url": "https://example-council.metastreet.co.uk/api/v1/properties",
+"url": "https://your-council.metastreet.co.uk/api/v1/properties",
 "pageSize": 100,
 "currentPage": 1,
 "totalPages": 3,
@@ -22,19 +22,19 @@
       "string"
     ],
     "address": {
-      "addressLine1": "Flat 123",
-      "addressLine2": "Imaginary Court",
-      "addressLine3": "Example Estate",
-      "addressLine4": "Abstract City",
+      "addressLine1": "4, Dasher Place",
+      "addressLine2": "Dasher Street",
+      "addressLine3": "Dasher Estate",
+      "addressLine4": "Dasher",
       "city": "London",
       "country": "United Kingdom",
-      "county": "Fantasy",
+      "county": "Greater London",
       "postcode": "A1 2BC",
       "uprn": "12345678910",
       "usrn": "1234567",
       "latitude": "1.230045",
       "longitude": "-5.430021",
-      "ward": "Dream Ward"
+      "ward": "Dasher Ward"
     }
   }
 ]

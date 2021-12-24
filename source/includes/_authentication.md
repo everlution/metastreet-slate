@@ -22,7 +22,7 @@ $ curl 'https://your-council.metastreet.co.uk/api/v1.1/properties' /
     "address": {
       "addressLine1": "4, Dasher Place",
       "addressLine2": "Dasher Street",
-      "addressLine3": "Highbury City",
+      "addressLine3": "Dasher Estate",
       ...
     }
     ...

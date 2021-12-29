@@ -344,12 +344,12 @@
 <blockquote>
 <p>BASE URL</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>https://<span class="o">{</span>your_council<span class="o">}</span>.metastreet.co.uk/api/v1.1/
+<div class="highlight"><pre class="highlight shell tab-shell"><code>https://your_council.metastreet.co.uk/api/v1.1/
 </code></pre></div><h5 id='the-metastreet-api-is-organised-around-rest-our-api-has-predictable-resource-oriented-urls-returns-json-encoded-responses-and-uses-standard-http-response-codes-authentication-and-verbs'>The Metastreet API is organised around REST. Our API has predictable resource-oriented URLs, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.</h5><h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>EXAMPLE AUTHENTICATED REQUEST</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://{your_council}.metastreet.co.uk/api/v1.1/properties'</span> <span class="se">\</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://your_council.metastreet.co.uk/api/v1.1/properties'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'</span>
 </code></pre></div>
 <blockquote>
@@ -360,7 +360,7 @@
   </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/api/v1.1/properties"</span><span class="p">,</span><span class="w">
   </span><span class="err">...</span><span class="w">
   </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1248152</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1248196</span><span class="p">,</span><span class="w">
     </span><span class="nl">"referenceNumbers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
       </span><span class="s2">"YCO-583484913397"</span><span class="w">
     </span><span class="p">],</span><span class="w">
@@ -452,7 +452,7 @@
 <blockquote>
 <p>EXAMPLE PAGINATION REQUEST</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://{your_council}.metastreet.co.uk/api/v1.1/properties?pageSize=50&amp;page=4'</span> <span class="se">\</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://your_council.metastreet.co.uk/api/v1.1/properties?pageSize=50&amp;page=4'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'</span>
 </code></pre></div>
 <blockquote>
@@ -467,7 +467,7 @@
   </span><span class="nl">"totalCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span><span class="w">
   </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1248196</span><span class="p">,</span><span class="w">
       </span><span class="nl">"referenceNumbers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="s2">"YCO-583484913397"</span><span class="w">
       </span><span class="p">],</span><span class="w">
@@ -486,7 +486,7 @@
 
 <p>The <code>pageSize</code> and <code>page</code> query parameters let you control pagination.</p>
 
-<p>Using the <code>pageSize</code> parameter, you can define the number of items to be displayed on one page.  By default, 100 results are returned per page and only one page is returned per request.</p>
+<p>One page is returned per request.  Using the <code>pageSize</code> parameter, you can define the number of items to be displayed on this page - the default is 100 items.</p>
 
 <p>Using the <code>page</code> parameter you can select which page you would like to be returned.</p>
 
@@ -502,7 +502,7 @@
 <p>THE PROPERTY OBJECT</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1248196</span><span class="p">,</span><span class="w">
   </span><span class="nl">"referenceNumbers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="s2">"YCO-583484913397"</span><span class="w">
   </span><span class="p">],</span><span class="w">
@@ -626,7 +626,7 @@
 <blockquote>
 <p><span style="font-family:Consolas, Menlo, Monaco, \"Lucida Console\", \"Liberation Mono\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Courier New\", monospace, serif"><span style="color:#a4cdfe">GET</span> /properties</span></p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://{your_council}.metastreet.co.uk/api/v1.1/properties'</span> <span class="se">\</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://your_council.metastreet.co.uk/api/v1.1/properties'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'</span>
 </code></pre></div>
 <blockquote>
@@ -641,24 +641,24 @@
   </span><span class="nl">"totalCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span><span class="w">
   </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
     </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1248196</span><span class="p">,</span><span class="w">
       </span><span class="nl">"referenceNumbers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="s2">"YCO-583484913397"</span><span class="w">
       </span><span class="p">],</span><span class="w">
       </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4, Dasher Place"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Street"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Estate"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"addressLine4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United Kingdom"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"county"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Greater London"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1 2BC"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"uprn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678910"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"usrn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.230045"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-5.430021"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"ward"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Ward"</span><span class="w">
+        </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4, Dasher Place"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Street"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Estate"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"addressLine4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United Kingdom"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"county"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Greater London"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1 2BC"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"uprn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678910"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"usrn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.230045"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-5.430021"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"ward"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dasher Ward"</span><span class="w">
       </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
     </span><span class="err">...</span><span class="w">

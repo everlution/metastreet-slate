@@ -15,6 +15,8 @@ includes:
   - propertyobject
   - listproperties
   - retrieveproperties
+  - licences
+  - licenceobject
 
 
 search: true

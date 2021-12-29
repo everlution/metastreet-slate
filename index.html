@@ -338,6 +338,14 @@
                   </li>
               </ul>
           </li>
+          <li>
+            <a href="#licences" class="toc-h1 toc-link" data-title="Licences">Licences</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#the-licence-object" class="toc-h2 toc-link" data-title="The licence object">The licence object</a>
+                  </li>
+              </ul>
+          </li>
       </ul>
     </div>
     <div class="page-wrapper">
@@ -729,6 +737,351 @@ Pagination parameters as also available - see <a href="/?shell#pagination">Pagin
 <p style="max-width:440px; margin-bottom:15px; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
 <p>Returns the Property object for a valid identifier.</p>
+<h1 id='licences'>Licences</h1>
+<blockquote>
+<p>ENDPOINTS</p>
+</blockquote>
+<div class="highlight"><pre class="highlight php tab-php"><code>  <span class="no">GET</span> <span class="o">/</span><span class="n">licences</span>
+  <span class="no">GET</span> <span class="o">/</span><span class="n">licences</span><span class="o">/:</span><span class="n">referenceNo</span>
+</code></pre></div><h5 id='this-object-represents-a-property-licence-or-licence-application'>This object represents a property licence or licence application.</h5><h5 id='it-includes-data-about-the-property-rooms-health-and-safety-information-occupancy-and-interested-parties-it-also-provides-metadata-pertaining-to-the-processing-of-the-licence-application-including-licence-phase-type-status-issue-dates-and-staff-assignees'>It includes data about the property (rooms, health and safety information, occupancy) and interested parties.  It also provides metadata pertaining to the processing of the licence application including licence phase/type/status, issue dates and staff assignees.</h5><h2 id='the-licence-object'>The licence object</h2>
+<blockquote>
+<p>THE LICENCE OBJECT</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"referenceNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flat 123"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Imaginary Court"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example Estate"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"addressLine4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Abstract City"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United Kingdom"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"county"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fantasy"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1 2BC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"uprn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678910"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"usrn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.230045"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-5.430021"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"ward"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dream Ward"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"licencePhase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"licenceType"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"licenceStatus"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"assignee"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"dateSubmitted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.657Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"datePaid"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.657Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"propertyRooms"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"bathrooms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"exclusivity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Shared"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"washHandBasins"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"toilets"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"bathsAndShowers"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"bedrooms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"exclusivity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Shared"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"bathroomFacilities"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"washBasins"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"toilets"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"bathShower"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"kitchenFacilities"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"ovens"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"hobs"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"sinks"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"fridges"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"freezers"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"communalRooms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"exclusivity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Shared"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"smokeAlarm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"bestDescription"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dining room"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"washHandBasins"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"kitchens"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"exclusivity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Shared"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"smokeAlarm"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"ovens"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"hobs"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"sinks"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"fridges"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"freezers"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"propertyUnits"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"unitsNotUnderLicenceHolder"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"floor"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"occupied"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Residential"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"flatsUnderLicenceHolder"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"floor"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"entrance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Shared"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"roomsInFlat"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tenancyType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assured shorthold tenancy (AST)"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tenancyTypeOther"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"occupiersCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"namesOfAllOccupiers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"bedsitsUnderLicenceHolder"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"floor"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"entrance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Shared"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"size"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tenancyType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Assured shorthold tenancy (AST)"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tenancyTypeOther"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"occupiersCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"namesOfAllOccupiers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"eligibilityInformation"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"unspentConvictions"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unspentConvictionsDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unlawfulDiscrimination"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unlawfulDiscriminationDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"judgementMadeAgainstYou"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"judgementMadeAgainstYouDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"experienceOfManagingRentedProperty"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"licenceHolderBelongToLandlords"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"nameOfAssociation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"registrationNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"propertyVisited"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasFunds"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fundsInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasPropertyInControlToManagementOrder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasPropertyInControlToManagementOrderDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasPropertyThatHasBeenRefused"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasPropertyThatHasBeenRefusedDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"regularInspection"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"regularInspectionMonthly"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"regularInspectionPerson"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"regularCleaning"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"regularCleaningMonthly"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"regularCleaningPerson"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"problems"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"problemsDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"healthAndSafety"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"smokeAlarmsAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasKitchenFireDoors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasFireBlankets"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasFireExtinguishers"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fireExtinguishersInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasFireDetectionSystem"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasSafetyInformation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasRegulationsCompliance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasGasSupply"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gasSafety"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fireDoors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes - all"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fireDoorsDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"basementOrCellar"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"basementOrCellarDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fireDetection"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fireDetectionDetails"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"emergencyLighting"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"extinguisher"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"fireSafety"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"electricalInstallation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gasInstallation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"electricalSupply"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"exitDoors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"propertyDetails"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"propertyUsage"</span><span class="p">:</span><span class="w"> </span><span class="s2">"House in multiple occupation"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"propertyStoriesAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"floorsSituation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"buildingStoriesAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"propertyHouseholdAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"propertyPeopleAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"propertyPeopleAmountToLet"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"propertyHouseholdAmountToLet"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"occupiedDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.658Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"separateLettingsAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"habitableRoomsAmount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"propertyApproxYear"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"externalStructures"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maxOccupants"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"maxHouseholds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"hasBuildingBeenConvertedIntoFlats"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Whole building"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"dateOfConversion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"howIsTheBuildingOccupied"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Residential"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"howIsTheBuildingOccupiedInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"residentialFlatsNumber"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unitsUnderLicenceHolder"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"residingLicenceHolderInUnit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Yes"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"residingLicenceHolderInUnitInfo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"interestedParties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"licenceHolder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"personWhoCollectRent"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"applicant"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"parties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"surname"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"dateOfBirth"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.658Z"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"companyName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"addressLine1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Flat 123"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"addressLine2"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Imaginary Court"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"addressLine3"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example Estate"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"addressLine4"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Abstract City"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"London"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"country"</span><span class="p">:</span><span class="w"> </span><span class="s2">"United Kingdom"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"county"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fantasy"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"postcode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A1 2BC"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"uprn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12345678910"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"usrn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1234567"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1.230045"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"-5.430021"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"ward"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dream Ward"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"phoneNumber"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"emailAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"partyType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"partyTypeName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"organisation"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"dateContacted"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.659Z"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"dateDraftIssued"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.659Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dateFinalIssued"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.659Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dateValidFrom"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.659Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"dateValidTo"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-12-29T14:44:53.659Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"totalMaxPersons"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"totalMaxHouseholds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div><h3 id='attributes'>Attributes</h3>
+<p style="max-width:440px; margin-bottom:0; margin-left:28px; padding-top:15px; padding-left:0px; border-top-style:solid; border-top-color:#eee; border-top-width:1px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">id</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p>Unique identifier for the object.</p>
+
+<p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">referenceNumbers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array</span>
+</p>
+
+<p>List of reference numbers of any licences, applications and temporary exemptions associated with the property.</p>
+
+<p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">address</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array</span>
+</p>
+
+<p>All address data.</p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine1</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">First line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine2</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Second line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine3</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Third line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>addressLine4</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Fourth line of the property&#39;s address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>city</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">City of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>country</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Country of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>county</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">County of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>postcode</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Postcode of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>uprn</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Unique Property Reference Number (UPRN) of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>usrn</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Unique Street Reference Number (USRN) of the address.</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>latitude</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Latitude of the address in decimal degrees (<a href="https://wikipedia.org/wiki/ISO_6709" target="_blank">ISO 6709</a>).</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>longitude</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Longitude of the address in decimal degrees (<a href="https://wikipedia.org/wiki/ISO_6709" target="_blank">ISO 6709</a>).</span></p>
+
+<p style="max-width:440px; margin-bottom:0; margin-top:15px; padding-left:56px">
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">address.</span>ward</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
+</p>
+
+<p><span style="padding-left:28px">Ward of the address.</span></p>
 
       </div>
       <div class="dark-box">

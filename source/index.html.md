@@ -14,6 +14,7 @@ includes:
   - properties
   - propertyobject
   - listproperties
+  - retrieveproperties
 
 
 search: true

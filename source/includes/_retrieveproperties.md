@@ -48,7 +48,7 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties/10008223635' \
 ### Parameters
 
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; padding-top:15px; padding-left:0px; border-top-style:solid; border-top-color:#eee; border-top-width:1px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">No parameters</span> <span style="font-size:12px; font-weight:600; color:#8792a2">optional</span>
+<span style="font-size:12px; color:#8792a2;">No parameters.</span>
 </p>
 
 
@@ -56,4 +56,4 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties/10008223635' \
 
 <p style="max-width:440px; margin-bottom:15px; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
-A dictionary with a `data` property that contains an array of properties. Passing an optional `postcode` will result in filtering to properties with only that exact postcode. Each entry in the array is a separate property object. If no more properties are available, the resulting array will be empty. This request should never return an error.
+Returns the Property object for a valid identifier.

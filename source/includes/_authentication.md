@@ -3,7 +3,7 @@
 > EXAMPLE AUTHENTICATED REQUEST
 
 ```shell
-$ curl 'https://{your_council}.metastreet.co.uk/api/v1.1/properties' \
+$ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties' \
 -H 'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'
 ```
 
@@ -15,7 +15,7 @@ $ curl 'https://{your_council}.metastreet.co.uk/api/v1.1/properties' \
   "url": "/api/v1.1/properties",
   ...
   "data": [ {
-    "id": 1248152,
+    "id": 1248196,
     "referenceNumbers": [
       "YCO-583484913397"
     ],

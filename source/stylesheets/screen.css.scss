@@ -677,8 +677,13 @@ html, body {
   color: #85D996;
 }
 
-.highlight .mi {
+.highlight .mi, .highlight .mf {
   color: #f6AA11;
+}
+
+.highlight .kc {
+  color: #f6AA11;
+  font-weight: 600;
 }
 
 .highlight .no {

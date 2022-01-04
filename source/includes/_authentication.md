@@ -20,7 +20,7 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties' \
       "YCO-583484913397"
     ],
     "address": {
-      "addressLine1": "4, Dasher Place",
+      "addressLine1": "4 Dasher Place",
       "addressLine2": "Dasher Street",
       "addressLine3": "Dasher Estate",
       ...

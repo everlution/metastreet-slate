@@ -17,6 +17,8 @@ includes:
   - retrieveproperties
   - licences
   - licenceobject
+  - listlicences
+  - retrievelicences
 
 
 search: true

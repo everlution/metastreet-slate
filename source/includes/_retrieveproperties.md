@@ -1,6 +1,6 @@
 ## Retrieve a property
 
-> <span style="font-family:Consolas, Menlo, Monaco, \"Lucida Console\", \"Liberation Mono\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Courier New\", monospace, serif"><span style="color:#a4cdfe">GET</span> /properties</span>
+> <span style="font-family:Consolas, Menlo, Monaco, \"Lucida Console\", \"Liberation Mono\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Courier New\", monospace, serif"><span style="color:#a4cdfe">GET</span> /properties/:uprn</span>
 
 ```shell
 $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties/10008223635' \
@@ -20,7 +20,7 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties/10008223635' \
         "YCO-583484913397"
       ],
       "address": {
-        "addressLine1": "4, Dasher Place",
+        "addressLine1": "4 Dasher Place",
         "addressLine2": "Dasher Street",
         "addressLine3": "Dasher Estate",
         "addressLine4": "Dasher",

@@ -24,7 +24,7 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties' \
         "YCO-583484913397"
       ],
       "address": {
-        "addressLine1": "4, Dasher Place",
+        "addressLine1": "4 Dasher Place",
         "addressLine2": "Dasher Street",
         "addressLine3": "Dasher Estate",
         "addressLine4": "Dasher",
@@ -60,7 +60,7 @@ A filter on the list based on the property’s postcode field. The value must be
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
 <p style="padding-top:15px">
-Pagination parameters as also available - see <a href="/?shell#pagination">Pagination</a>.
+Pagination parameters are also available - see <a href="/?shell#pagination">Pagination</a>.
 </p>
 
 

@@ -9,7 +9,7 @@
     "YCO-583484913397"
   ],
   "address": {
-    "addressLine1": "4, Dasher Place",
+    "addressLine1": "4 Dasher Place",
     "addressLine2": "Dasher Street",
     "addressLine3": "Dasher Estate",
     "addressLine4": "Dasher",
@@ -48,7 +48,7 @@ List of reference numbers of any licences, applications and temporary exemptions
 
 
 <p style="max-width:440px; margin-bottom:0; margin-top:15px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">address</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array</span>
+<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">address</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
 All address data.

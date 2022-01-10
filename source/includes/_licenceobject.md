@@ -387,7 +387,7 @@ Set of key-value pairs comprising an identifier and a licence type.
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">licenceType.</span>NAME</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">Licence type of this application/licence. Options are `Mandatory HMO Licence`, `Additional HMO licence`, `Selective licence`, `257 HMO` and `Temporary Exemption`. </span>
+<span style="padding-left:28px; display:inline-block; word-wrap:break-word">Licence type of this application/licence. Options are `Mandatory HMO Licence`, `Additional HMO licence`, `Selective licence`, `257 HMO` and `Temporary Exemption`. </span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -396,19 +396,19 @@ Set of key-value pairs comprising an identifier and a licence type.
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">licenceStatus</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Set of key-value pairs comprising an identifier and a licence status.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">licenceStatus.</span>id</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Licence status key-value pair ID.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">licenceStatus.</span>NAME</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Licence status of this application/licence.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -417,19 +417,19 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">assignee</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Set of key-value pairs comprising an identifier and an assignee name.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">assignee.</span>id</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Assignee key-value pair ID.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">assignee.</span>NAME</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Name of the person currently assigned to this licence/application.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -438,7 +438,7 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">dateSubmitted</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-ENTER EXPLANATION HERE - ISO 8601
+Date and time that the application was submitted by the applicant. <a href="https://en.wikipedia.org/wiki/ISO_8601"; target="_blank">ISO 8601</a> is used e.g. `2021-11-18T14:15:32+00:00`.
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -447,7 +447,7 @@ ENTER EXPLANATION HERE - ISO 8601
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">datePaid</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-ENTER EXPLANATION HERE - ISO 8601
+Date and time that the application was paid for by the applicant. <a href="https://en.wikipedia.org/wiki/ISO_8601"; target="_blank">ISO 8601</a> is used e.g. `2021-11-18T14:15:32+00:00`. Note that is split payments is activated, this is the date and time that Fee A was paid.
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -456,229 +456,229 @@ ENTER EXPLANATION HERE - ISO 8601
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">propertyRooms</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Room data for all rooms in the property.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.</span>bathrooms</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Bathroom data. Separate object for each bathroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bathrooms.</span>location</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Location of the bathroom within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bathrooms.</span>exclusivity</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the bathroom is shared or exclusive.  Enum with two values: `Shared` and `Exclusive`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bathrooms.</span>washHandBasins</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of wash hand basins (sinks) in the bathroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bathrooms.</span>toilets</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of toilets in the bathroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bathrooms.</span>bathsAndShowers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of baths and/or showers in the bathroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.</span>bedrooms</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Bedroom data. Separate object for each bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>location</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Location of the bedroom within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>size</span> <span style="font-size:12px; font-weight:600; color:#8792a2">number</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Size of the bedroom in m<sup>2</sup>.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>exclusivity</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the bedroom is shared or exclusive.  Enum with two values: `Shared` and `Exclusive`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>bathroomFacilities</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the bedroom has any bathroom facilities.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>washBasins</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of wash hand basins (sinks) in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>toilets</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of toilets in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>bathShower</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of baths and/or showers in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>kitchenFacilities</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the bedroom has any kitchen facilities.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>ovens</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of ovens in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>hobs</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of hobs in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>sinks</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of sinks in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>fridges</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of fridges in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.bedrooms.</span>freezers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of freezers in the bedroom.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.</span>communalRooms</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Communal room data. Separate object for each communal room.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.communalRooms.</span>location</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Communal room location within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.communalRooms.</span>size</span> <span style="font-size:12px; font-weight:600; color:#8792a2">number</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Size of the communal room in m<sup>2</sup>.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.communalRooms.</span>exclusivity</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the communal room is shared or exclusive.  Enum with two values: `Shared` and `Exclusive`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.communalRooms.</span>smokeAlarm</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the communal room has a smoke alarm.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.communalRooms.</span>bestDescription</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Details the communal room type.  Enum with three values: `Dining room`, `Living room`, and `Other communal space`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.communalRooms.</span>washHandBasins</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Number of wash hand basins (sinks) in the communal room.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.</span>kitchens</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Kitchen data. Separate object for each kitchen.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>location</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Location of the kitchen within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>size</span> <span style="font-size:12px; font-weight:600; color:#8792a2">number</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Size of the kitchen in m<sup>2</sup>.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>exclusivity</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the kitchen is shared or exclusive.  Enum with two values: `Shared` and `Exclusive`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>smokeAlarm</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the kitchen has a smoke alarm.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>ovens</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of ovens in the kitchen.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>hobs</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of hobs in the kitchen.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>sinks</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of sinks in the kitchen.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>fridges</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of fridges in the kitchen.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyRooms.kitchens.</span>freezers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of freezers in the kitchen.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -687,139 +687,127 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">propertyUnits</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Unit data for all units in the property.  This is only applicable for section 257 property types.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.</span>unitsNotUnderLicenceHolder</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Unit data for units that are not under licence holder's control. Separate object for each unit.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.unitsNotUnderLicenceHolder.</span>name</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Name/number of the unit within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.unitsNotUnderLicenceHolder.</span>floor</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Floor that the unit is on within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.unitsNotUnderLicenceHolder.</span>occupied</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes how the unit is occupied.  Enum with four values: `Owner occupied`, `Privately rented`, `Vacant` and `Don't know`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.</span>flatsUnderLicenceHolder</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Unit data for units that are under licence holder's control. Separate object for each unit.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>name</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Name/number of the unit within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>floor</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Floor that the unit is on within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>entrance</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the entrance or staircase to the unit is shared with other units or whether it has its own separate entrance.  Enum with two values: `Shared` and `Separate`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>roomsInFlat</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Number of rooms in the unit (excluding kitchens and bathrooms).</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>tenancyType</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes the tenancy type.  Enum with five values: `Assured shorthold tenancy (AST)`, `Assured tenancy`, `Excluded tenancy or licence (shared accommodation with landlord)`, `Regulated tenancy` and `Other`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>tenancyTypeOther</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Description of tenancy type if `Other` is selected for `tenancyType`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>occupiersCount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
-
-<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">propertyUnits.flatsUnderLicenceHolder.</span>namesOfAllOccupiers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
-</p>
-
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of people currently occupying the unit.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.</span>bedsitsUnderLicenceHolder</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Unit data for bedsits/studios that are under the licence holder's control.  Separate object for each unit.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>name</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Name/number of the bedsit/studio within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>floor</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Floor that the bedsit/studio is on within the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>entrance</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the entrance or staircase to the unit is shared with other units or whether it has its own separate entrance.  Enum with two values: `Shared` and `Separate`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>size</span> <span style="font-size:12px; font-weight:600; color:#8792a2">number</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Size of the bedsit/studio in m<sup>2</sup>.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>tenancyType</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes the tenancy type.  Enum with five values: `Assured shorthold tenancy (AST)`, `Assured tenancy`, `Excluded tenancy or licence (shared accommodation with landlord)`, `Regulated tenancy` and `Other`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>tenancyTypeOther</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Description of tenancy type if `Other` is selected for `tenancyType`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>occupiersCount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
-
-<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">propertyUnits.bedsitsUnderLicenceHolder.</span>namesOfAllOccupiers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
-</p>
-
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Number of people currently occupying the bedsit/studio.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -828,115 +816,115 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">eligibilityInformation</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Eligibility data of all interested parties.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>unspentConvictions</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether any of the interested parties have unspent convictions.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>unspentConvictionsDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Details of any unspent convictions.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>unlawfulDiscrimination</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether any of the interested parties have been involved with any unlawful discrimination.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>unlawfulDiscriminationDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Details of any unlawful discrimination.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>judgementMadeAgainstYou</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether any of the interested parties have had a judgement made against them relating to Housing, Public Health, Environmental Health or Landlord and Tenant Law.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>judgementMadeAgainstYouDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Details of any judgements made against an interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">eligibilityInformation.</span>experienceOfManagingRentedProperty</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the licence holder or manager has any experience of managing rented property.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>licenceHolderBelongToLandlords</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the licence holder is an accredited landlord.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>nameOfAssociation</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Name of the landlord's accreditation association or regulation.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>registrationNumber</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Landlord's accreditation registration/certificate number.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>propertyVisited</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the property is visited to check its condition and for any antisocial activities of the tenants.  Enum with two value: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>hasFunds</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether there are funds to deal with uninsured damage/insurance and maintenance to the property.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>fundsInfo</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Details of funding arrangements for dealing with emergency repairs, uninsured damage, necessary maintenance or general upkeep of the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">eligibilityInformation.</span>hasPropertyInControlToManagementOrder</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether any of the interested parties have been in control of a property that was subject to a Management Order, in the last five year.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">eligibilityInformation.</span>hasPropertyInControlToManagementOrderDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Names of people who have been in control of a property that was subject to a Management Order.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>hasPropertyThatHasBeenRefused</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether any of the interested parties have been in control of a property that has been refused a licence or breached conditions of a licence, in the last five years.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace; word-wrap:break-word"><span style="color:#a3acb9">eligibilityInformation.</span>hasPropertyThatHasBeenRefusedDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Names of people who have been in control of a property that has been refused a licence or breached conditions of a licence, in the last five years.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularInspection</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">ENTER EXPLANATION HERE - 257 properties</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularInspectionMonthly</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>

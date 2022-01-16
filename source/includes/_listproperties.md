@@ -3,7 +3,7 @@
 > <span style="font-family:Consolas, Menlo, Monaco, \"Lucida Console\", \"Liberation Mono\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Courier New\", monospace, serif"><span style="color:#a4cdfe">GET</span> /properties</span>
 
 ```shell
-$ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties' \
+$ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties?postcode=A12BC' \
 -H 'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'
 ```
 
@@ -15,8 +15,8 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties' \
   "url": "/api/v1.1/properties",
   "pageSize": 100,
   "currentPage": 1,
-  "totalPages": 5,
-  "totalCount": 401,
+  "totalPages": 1,
+  "totalCount": 45,
   "data": [
     {
       "id": 1248196,

@@ -924,49 +924,49 @@ Eligibility data of all interested parties.
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularInspection</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE - 257 properties</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the property is regularly inspected for the routine maintenance and management of the common parts.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularInspectionMonthly</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of weeks between inspections.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularInspectionPerson</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Name of the person who carries out inspections.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularCleaning</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether there are arrangements in place for the regular cleaning of the common parts of the property.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularCleaningMonthly</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of weeks between cleaning sessions.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>regularCleaningPerson</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Name of the person who carries out the cleaning.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>problems</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes if there are any problems of which the council should be made aware.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">eligibilityInformation.</span>problemsDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Details of any problems.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -975,145 +975,145 @@ Eligibility data of all interested parties.
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">healthAndSafety</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Property health and safety information for the licence/application.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>smokeAlarmsAmount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of smoke alarms in the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>hasKitchenFireDoors</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the kitchen has fire doors.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>hasFireBlankets</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the kitchen has fire blankets.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>hasFireExtinguishers</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the stairways have fire extinguishers.  Enum with three values: `Yes`, `No` and `Not applicable`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>fireExtinguishersInfo</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Details as to why fire extingushers in stairways are not applicable.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>hasFireDetectionSystem</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether there is a mains powered fire detection system in the property.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>hasSafetyInformation</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the occupiers are provided with details of escape routes and other fire safety information.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>hasRegulationsCompliance</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether furniture provided within the property complies with Fire Safety Regulations.  Enum with three values: `Yes`, `No` and `Not applicable`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>hasGasSupply</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the property has a gas supply.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>gasSafety</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether all gas appliances in the property meet the health and safety standards of relevant gas safety legislation and are tested annually, for properties with a gas supply.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>fireDoors</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether fire doors are installed in all properties under the licence holder’s control.  Enum with three values: `Yes - all`, `Yes - some` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>fireDoorsDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether all other entrance doors to the flats are 30-minute fire doors, with smoke seals and intumescent strips, if fire doors are only installed in some, or none, of the properties under the licence holder's controlled.  Enum with three values: `Yes`, `No` and `Don't know`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>basementOrCellar</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether any of the properties have a basement or cellar.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>basementOrCellarDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the cellar or basement has a fire protected ceiling (plaster board or fire boarding) and a fire door.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>fireDetection</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes if the common parts have a fire detection or alarm system installed.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>fireDetectionDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Details of the fire detection or alarm system, if one is installed in the common parts.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>emergencyLighting</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes if there is any emergency lighting in the halls and stairways.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>extinguisher</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes if there is a fire extingusher in the halls and stairways.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>fireSafety</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether a fire safety risk assessment been undertaken at the building.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>electricalInstallation</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the electrical installation and any fixed electrical appliances have been tested within the last five years.  Enum with three values: `Yes`, `No` and `Not applicable`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>gasInstallation</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether there are gas or electrical installations (e.g. meters) in the common parts/areas.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>electricalSupply</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether there is a separate landlord electrical supply for the common parts.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">healthAndSafety.</span>exitDoors</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the main exit door(s) from the property have secure locks that can be opened from the inside without the use of a key.  Enum with two values: `Yes` and `No`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1122,145 +1122,133 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">propertyDetails</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Detailed information about the property primarily regarding layout and occupation.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>propertyUsage</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes how the property is used/occupied.  Enum with four values: `House in multiple occupation`, `Flat in multiple occupation`, `House rented to single household` and `Flat rented to single household`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>propertyStoriesAmount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of storeys in the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>floorsSituation</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes on what floors of the building the property's stories are situated.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>buildingStoriesAmount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of stories in the entire building.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>propertyHouseholdAmount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of households that currently live in the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>propertyPeopleAmount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of people that currently live in the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>propertyPeopleAmountToLet</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Proposed number of people that will live in the property if there are no current occupants but it is planned for there to be occupants living in the property in the near future.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>propertyHouseholdAmountToLet</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Proposed number of households that will live in the property if there are no current occupants but it is planned for there to be occupants living in the property in the near future.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>occupiedDate</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Date that it is intended for there to be tenants occupying the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>separateLettingsAmount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of separate lettings in the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>habitableRoomsAmount</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Number of habitable rooms in the property.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>propertyApproxYear</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Approximate year that the building was constructed.  Enum with six values: `Pre 1919`, `1919 - 1944`, `1945 - 1964`, `1965 - 1980`, `1981 - 1991` and `Post 1991`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>externalStructures</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
-
-<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>maxOccupants</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
-</p>
-
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
-
-<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>maxHouseholds</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
-</p>
-
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes if there are any external structures, outbuildings or sheds used as part of the living accommodation.  Enum with two values: `Yes` and `No`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>hasBuildingBeenConvertedIntoFlats</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes whether the whole building, or part of the building, has been converted into flats.  Enum with two values: `Whole building` and `Part of the building`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>dateOfConversion</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Date of the conversion.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>howIsTheBuildingOccupied</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes how the building is occupied.  Enum with two values: `Residential` and `Mixed (residential & commercial)`.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>howIsTheBuildingOccupiedInfo</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes what storeys are in commercial use (for mixed occupancy buildings).  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>residentialFlatsNumber</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Total number of residential flats in the building.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>unitsUnderLicenceHolder</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Total number of units in the building that are under the control of the licence holder.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>residingLicenceHolderInUnit</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes if the licence holder is residing in any of the units within the building.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">propertyDetails.</span>residingLicenceHolderInUnitInfo</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px; display:inline-block">Describes which unit the licence holder resides in, if the licence holder resides in the building.  Only applies to s257 properties.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1269,79 +1257,67 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">interestedParties</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-ENTER EXPLANATION HERE
+Details about all of the interested parties associated with the property/licence.
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.</span>licenceHolder</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Name of the licence holder</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.</span>personWhoCollectRent</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Name of the person who collects the rent.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.</span>applicant</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Name of the applicant / portal account holder (PAH).</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:56px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.</span>parties</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:28px">Interested party data.  Separate object for each interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>title</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
-
-<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>title</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
-</p>
-
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
-
-<p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
-<span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>title</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
-</p>
-
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Title of the interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>firstName</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">First name of the interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>surname</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Surname of the interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>dateOfBirth</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Date of birth of the interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>companyName</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Comapny name of the interested party (if it's a company).</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>address</span> <span style="font-size:12px; font-weight:600; color:#8792a2">object</span>
 </p>
 
-<span style="padding-left:84px">All address data.</span>
+<span style="padding-left:84px">All address data of the interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:112px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.address.</span>addressLine1</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
@@ -1437,37 +1413,37 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>phoneNumber</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Phone number of the interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>emailAddress</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px">Email address of the interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>partyType</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Interested party type.  Values are: `Freeholder`, `Leaseholder`, `Managing agent`, `Mortgage provider` and `Other`.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>partyTypeName</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">If the interested party type is `Other` then this is the description of the party type.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>organisation</span> <span style="font-size:12px; font-weight:600; color:#8792a2">boolean</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Describes whether the interested party is an organisation (`TRUE`) or an individual (`FALSE`). </span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:30px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>dateContacted</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-<span style="padding-left:56px">ENTER EXPLANATION HERE</span>
+<span style="padding-left:56px; display:inline-block">Date that the interested party was informed about the licence application.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1476,7 +1452,7 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">dateDraftIssued</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-ENTER EXPLANATION HERE
+Date that the draft licence was issued.
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1485,7 +1461,7 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">dateFinalIssued  </span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-ENTER EXPLANATION HERE
+Date that the final licence was issued.
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1494,7 +1470,7 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">dateValidFrom</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-ENTER EXPLANATION HERE
+Date the licence is valid from.
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1503,7 +1479,7 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">dateValidTo</span> <span style="font-size:12px; font-weight:600; color:#8792a2">dateTime</span>
 </p>
 
-ENTER EXPLANATION HERE
+Date the licence expires.
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1512,7 +1488,7 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">totalMaxPersons</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-ENTER EXPLANATION HERE
+Total maximum permitted number of persons that can reside in the property.
 
 <p style="max-width:500px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -1521,4 +1497,4 @@ ENTER EXPLANATION HERE
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">totalMaxHouseholds</span> <span style="font-size:12px; font-weight:600; color:#8792a2">integer</span>
 </p>
 
-ENTER EXPLANATION HERE
+Total maximum permitted number of households that can reside in the property.

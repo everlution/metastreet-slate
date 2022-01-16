@@ -694,18 +694,21 @@ html, body {
   background-color: $code-bg;
 }
 
+
+
 .copy-clipboard {
   float: right;
   fill: #A5CDFE;
   cursor: pointer;
+  opacity: 0.4;
   height: 18px;
   width: 18px;
-  margin: 15px;
+  visibility: hidden;
 }
 
-.copy-clipboard:hover {
-  opacity: 0.7;
-}
+/*.copy-clipboard:hover {
+  opacity: 0.9;
+}*/
 
 ::placeholder {
   color: #8792a2;

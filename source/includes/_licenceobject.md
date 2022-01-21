@@ -1281,7 +1281,7 @@ Details about all of the interested parties associated with the property/licence
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.</span>parties</span> <span style="font-size:12px; font-weight:600; color:#8792a2">array of objects</span>
 </p>
 
-<span style="padding-left:28px">Interested party data.  Separate object for each interested party.</span>
+<span style="padding-left:28px; display:inline-block">Interested party data.  Separate object for each interested party.</span>
 
 <p style="max-width:500px; margin-bottom:0; margin-top:15px; padding-left:84px">
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace"><span style="color:#a3acb9">interestedParties.parties.</span>title</span> <span style="font-size:12px; font-weight:600; color:#8792a2">string</span>

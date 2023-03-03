@@ -43,7 +43,7 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/properties/10008223635' \
 
 
 
-##### Retrieves a Property object.
+##### Retrieves a Property object.  Supply the Unique Property Reference Number (`uprn`) in the URL and Metastreet will return the corresponding property information.
 
 ### Parameters
 

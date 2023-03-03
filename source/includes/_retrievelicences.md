@@ -173,7 +173,7 @@ $ curl 'https://your_council.metastreet.co.uk/api/v1.1/licences/YCO-58348491339'
 
 
 
-##### Retrieves a Licence object.
+##### Retrieves a Licence object.  Supply the unique Licence Reference Number (`referenceNo`) in the URL.
 
 ### Parameters
 

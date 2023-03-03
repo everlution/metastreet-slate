@@ -735,7 +735,7 @@ Pagination parameters are also available - see <a href="/?shell#pagination">Pagi
     </span><span class="err">...</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div><h5 id='retrieves-a-property-object'>Retrieves a Property object.</h5><h3 id='parameters'>Parameters</h3>
+</span></code></pre></div><h5 id='retrieves-a-property-object-supply-the-unique-property-reference-number-uprn-in-the-url-and-metastreet-will-return-the-corresponding-property-information'>Retrieves a Property object.  Supply the Unique Property Reference Number (<code>uprn</code>) in the URL and Metastreet will return the corresponding property information.</h5><h3 id='parameters'>Parameters</h3>
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; padding-top:15px; padding-left:0px; border-top-style:solid; border-top-color:#eee; border-top-width:1px">
 <span style="font-size:12px; color:#8792a2;">No parameters.</span>
 </p>
@@ -2205,7 +2205,7 @@ Pagination parameters are also available - see <a href="/?shell#pagination">Pagi
 <blockquote>
 <p><span style="font-family:Consolas, Menlo, Monaco, \"Lucida Console\", \"Liberation Mono\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Courier New\", monospace, serif"><span style="color:#a4cdfe">GET</span> /licences</span></p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://your_council.metastreet.co.uk/api/v1.1/licences'</span> <span class="se">\</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code><span class="nv">$ </span>curl <span class="s1">'https://your_council.metastreet.co.uk/api/v1.1/licences?postcode=A12BC&amp;licenceTypeId=3'</span> <span class="se">\</span>
 <span class="nt">-H</span> <span class="s1">'x-auth-api-token: 3b07c593c309ebf41330cd6f6867610eb18abe43dcf1d'</span>
 </code></pre></div>
 <blockquote>
@@ -2391,7 +2391,13 @@ Pagination parameters are also available - see <a href="/?shell#pagination">Pagi
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">licenceTypeId</span> <span style="font-size:12px; font-weight:600; color:#8792a2">optional</span>
 </p>
 
-<p>A filter on the list based on the licence’s licenceTypeId field. The value must be an integer.</p>
+<p>A filter on the list based on the licence’s licenceTypeId field. The value must be an integer.  Ids correspond to the following licence types:</p>
+
+<p>id:<code>1</code> = <code>Mandatory HMO licence</code></br>
+id:<code>2</code> = <code>Additional HMO licence</code></br>
+id:<code>3</code> = <code>Selective licence</code></br>
+id:<code>4</code> = <code>Temporary Exemption</code></br>
+id:<code>5</code> = <code>257 HMO</code></br></p>
 
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -2399,7 +2405,62 @@ Pagination parameters are also available - see <a href="/?shell#pagination">Pagi
 <span style="font-size:13px; font-weight:700; color:#2a2f45; font-family:Menlo, Consolas, monospace">licenceStatusId</span> <span style="font-size:12px; font-weight:600; color:#8792a2">optional</span>
 </p>
 
-<p>A filter on the list based on the licence’s licenceStatusId field. The value must be an integer.</p>
+<p>A filter on the list based on the licence’s licenceStatusId field. The value must be an integer.  Ids correspond to the following licence statuses:</p>
+
+<p>id:<code>1</code> = <code>Not-contacted</code></br>
+id:<code>2</code> = <code>Application created</code></br>
+id:<code>3</code> = <code>New</code></br>
+id:<code>4</code> = <code>2nd declaration - new</code></br>
+id:<code>6</code> = <code>2nd declaration - officer assigned</code></br>
+id:<code>7</code> = <code>2nd declaration - letter sent</code></br>
+id:<code>8</code> = <code>2nd declaration - no response</code></br>
+id:<code>9</code> = <code>2nd declaration - final reminder sent</code></br>
+id:<code>10</code> = <code>2nd declaration - no final response</code></br>
+id:<code>11</code> = <code>2nd declaration - complete</code></br>
+id:<code>12</code> = <code>Checks in progress</code></br>
+id:<code>13</code> = <code>Draft ready to send</code></br>
+id:<code>14</code> = <code>Draft sent</code></br>
+id:<code>15</code> = <code>Representation received</code></br>
+id:<code>16</code> = <code>Representation assessment</code></br>
+id:<code>17</code> = <code>Licence issued</code></br>
+id:<code>20</code> = <code>Licence revoked</code></br>
+id:<code>21</code> = <code>Licence refused</code></br>
+id:<code>22</code> = <code>Licence not required</code></br>
+id:<code>23</code> = <code>Checks not started</code></br>
+id:<code>24</code> = <code>2nd declaration - letter ready to send</code></br>
+id:<code>25</code> = <code>Final licence ready to send</code></br>
+id:<code>26</code> = <code>Make a decision</code></br>
+id:<code>27</code> = <code>Licence refusal letters ready to send</code></br>
+id:<code>28</code> = <code>Draft licence refusal sent</code></br>
+id:<code>29</code> = <code>Final refusal letter ready to send</code></br>
+id:<code>30</code> = <code>Refusal - Issue refund</code></br>
+id:<code>31</code> = <code>Representation received for licence refusal</code></br>
+id:<code>32</code> = <code>Representation assessment for licence refusal</code></br>
+id:<code>33</code> = <code>Revocation form received</code></br>
+id:<code>34</code> = <code>Revocation letters ready to send</code></br>
+id:<code>35</code> = <code>Draft revocation letters sent</code></br>
+id:<code>36</code> = <code>Final revocation letters ready to send</code></br>
+id:<code>37</code> = <code>Representation received for licence revocation</code></br>
+id:<code>38</code> = <code>Representation assessment for licence revocation</code></br>
+id:<code>39</code> = <code>Licence expired</code></br>
+id:<code>40</code> = <code>Variation form received</code></br>
+id:<code>41</code> = <code>Variation letters ready to send</code></br>
+id:<code>42</code> = <code>Final variation letters ready to send</code></br>
+id:<code>43</code> = <code>Draft variation letters sent</code></br>
+id:<code>44</code> = <code>Representation assessment for licence variation</code></br>
+id:<code>45</code> = <code>Representation received for licence variation</code></br>
+id:<code>46</code> = <code>Temporary exemption form received</code></br>
+id:<code>47</code> = <code>Temporary exemption not required</code></br>
+id:<code>48</code> = <code>TEN letters ready to send</code></br>
+id:<code>49</code> = <code>TEN issued</code></br>
+id:<code>50</code> = <code>TEN refused</code></br>
+id:<code>51</code> = <code>TEN expired</code></br>
+id:<code>52</code> = <code>Process Fee B charge</code></br>
+id:<code>53</code> = <code>New Renewal</code></br>
+id:<code>54</code> = <code>Renewal letters ready to send</code></br>
+id:<code>55</code> = <code>Renewal letters sent</code></br>
+id:<code>56</code> = <code>Application withdrawn</code></br>
+id:<code>57</code> = <code>Withdrawn - Issue refund</code></br></p>
 
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; border-bottom-style:solid; border-bottom-color:#eee; border-bottom-width:1px"></p>
 
@@ -2587,7 +2648,7 @@ Pagination parameters are also available - see <a href="/?shell#pagination">Pagi
     </span><span class="err">...</span><span class="w">
   </span><span class="p">]</span><span class="w">
 </span><span class="p">}</span><span class="w">
-</span></code></pre></div><h5 id='retrieves-a-licence-object'>Retrieves a Licence object.</h5><h3 id='parameters'>Parameters</h3>
+</span></code></pre></div><h5 id='retrieves-a-licence-object-supply-the-unique-licence-reference-number-referenceno-in-the-url'>Retrieves a Licence object.  Supply the unique Licence Reference Number (<code>referenceNo</code>) in the URL.</h5><h3 id='parameters'>Parameters</h3>
 <p style="max-width:440px; margin-bottom:0; margin-left:28px; padding-top:15px; padding-left:0px; border-top-style:solid; border-top-color:#eee; border-top-width:1px">
 <span style="font-size:12px; color:#8792a2;">No parameters.</span>
 </p>
